@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(32, 29, 29);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    padding: 0;
+    margin: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+.main-section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(128, 110, 87);
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pin-img {
+    width: 50px;
+}
+
+.title-container > h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #ffffff;
+    font-size: 3rem;
+}
