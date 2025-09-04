@@ -1,5 +1,6 @@
 body {
     background-color: rgb(32, 29, 29);
+    font-family: "Montserrat", sans-serif;
 }
 
 .wrapper {
@@ -23,9 +24,11 @@ body {
 
 .main-section-1 {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     background-color: rgb(128, 110, 87);
+    padding: 10px 40px;
 }
 
 .title-container {
@@ -42,4 +45,77 @@ body {
     font-family: "Montserrat Alternates", sans-serif;
     color: #ffffff;
     font-size: 3rem;
+}
+
+
+
+
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    background-color: rgb(148, 129, 105);
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 25px;
+    transform: translateY(0);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.hidden-form {
+    display: none !important;
+}
+
+.form-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-input {
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    width: 70%;
+    color: rgb(48, 48, 48);
+    background-color: rgb(189, 176, 160);
+    font-family: "Montserrat", sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+#type {
+    width: 100%;
+}
+
+select option {
+  color: rgb(255, 255, 255); 
+}
+
+.form-btn {
+    display: none;
+}
+
+
+
+.footer-container {
+    color: rgb(189, 176, 160);
+    margin-top: auto;
 }
